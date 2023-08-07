@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Cadastro Hotel</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container_form">  
+        <h2 class="titulo"> Projeto Traveller - Cadastro de Hotéis</h2>
+        <hr>    
+        <form action="" id="dados" name="dados" method="post">
+
+            <div class="campos">
+                <label for="nome">Nome do Hotel:</label>
+                <input type="text" name="" id="nome" placeholder="Ex: Hotel Plaza" autofocus required>
+            </div>
+            <hr>
+            <h3>Localização</h3>
+
+            <div class="campos">
+                <div class="em_linha">
+                    <label for="rua">Rua:</label>
+                    <label for="numero">Número:</label>
+                    <label for="bairro">Bairro:</label>
+                </div>
+                
+                <div class="em_linha">
+                    <input type="text" name="" id="rua" placeholder="Ex: Avenida Paulista" required>
+                    <input type="text" name="" id="numero" placeholder="Ex: 1234" required>
+                    <input type="text" name="" id="bairro" placeholder="Ex: Cerqueira César" required>
+                </div>
+            </div>
+
+            <div class="campos">
+                <div class="em_linha">
+                    <label for="cep">Cep:</label>
+                    <label for="cidade">Cidade:</label>
+                    <label for="estado">Estado:</label>
+                </div>
+                <div class="em_linha">
+                    <input type="text" name="" id="cep" placeholder="Ex: 12345-678" required>
+                    <input type="text" name="" id="cidade" placeholder="Ex: São Paulo" required>
+                    <input list="uf" name="" id="estados" placeholder="Selecione o Estado" required class="lista">
+                        <datalist id="uf">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </datalist>
+                </div>
+            </div>
+            <hr>
+            <h3>Contato</h3>       
+                
+            <div class="campos">
+                <div class="em_linha">
+                    <label for="telefone">Telefone:</label>
+                    <label for="email">Email:</label>
+                    <label for="site">Site:</label>
+                </div>
+
+                <div class="em_linha">
+                    <input type="tel" name="" id="telefone" placeholder="Ex: 00-1234-5678" required>
+                    <input type="email" name="" id="email" placeholder="Ex: hotel@email.com" required>
+                    <input type="url" id="data" placeholder="www.hotel.com" required>
+                </div>
+            </div>
+            <hr>
+            <h3>Outras informações</h3>
+
+            <div class="campos">
+                <div class="em_linha">
+                    <label for="valor">Valor da diária:</label>
+                    <label for="classificacao">Classificação:</label>
+                    <label for="dataCadastro">Data do cadastro:</label>
+                </div>
+                
+                <div class="em_linha">
+                    <input type="number" name="" id="valor" placeholder="Ex: 200,00" required>
+                    <input list="classifica" name="" id="classificacao" placeholder="Selecione a Classificação" required class="lista">
+                        <datalist id="classifica">
+                            <option value="1 estrela"></option>
+                            <option value="2 estrelas"></option>
+                            <option value="3 estrelas"></option>
+                            <option value="4 estrelas"></option>
+                            <option value="5 estrelas"></option>
+                        </datalist>
+                    <input type="data" name="" id="data" placeholder="Ex: 12/34/5678" required>
+                </div>
+            </div>
+
+            <div class="campos">
+                <label for="informacoes">Mais informações:</label>
+                <textarea name="" id="informacoes" placeholder="Informações adicionais"></textarea>
+            </div>
+
+            <div class="botoes">
+                <input type="submit" value="Gravar Hotel">
+            </div>
+        </form>
+    </div>
+ </body>
+</html>
